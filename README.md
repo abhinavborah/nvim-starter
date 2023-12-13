@@ -1,6 +1,6 @@
 # 💤 \[borah]'s custom LazyVim 
 
-A reproducible config for my lazyvim. 
+A reproducible setup for my lazyvim config.
 
 ## Installation:
 
