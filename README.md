@@ -5,7 +5,6 @@ A reproducible setup for my lazyvim config.
 ## Installation:
 
 ```
-chmod +x installer.sh
 ./installer.sh
 ```
 
