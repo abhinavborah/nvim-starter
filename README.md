@@ -1,6 +1,6 @@
 # 💤 \[borah]'s custom LazyVim
 
-[preview](./assets/preview.png)
+![preview](./assets/preview.png)
 _A reproducible setup for my lazyvim config._
 
 ## Installation:
