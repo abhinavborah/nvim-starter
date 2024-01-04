@@ -13,6 +13,8 @@ return {
         "tailwindcss-language-server",
         "typescript-language-server",
         "css-lsp",
+        "clangd",
+        "cmake",
       })
     end,
   },
