@@ -1,10 +1,6 @@
 return {
-  -- Incremental Renaming
-  {
-    "smjonas/inc-rename.nvim",
-    cmd = "IncRename",
-    config = true,
-  },
+  -- multicursor
+  { "mg979/vim-visual-multi" },
   -- lazygit
   {
     "kdheepak/lazygit.nvim",
