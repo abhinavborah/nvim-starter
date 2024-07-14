@@ -53,6 +53,15 @@ return {
     end,
   },
 
+  -- file explorer
+  {
+    "nvim-neo-tree/neo-tree.nvim",
+    opts = {
+      window = { position = "right" },
+    },
+  },
+
+  -- notifications
   {
     "rcarriga/nvim-notify",
     opts = {
