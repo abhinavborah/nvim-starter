@@ -188,7 +188,7 @@ return {
       },
       notifier = {
         enabled = true,
-        timeout = 5000,
+        timeout = 3000,
       },
       quickfile = { enabled = true },
       statuscolumn = { enabled = true },
