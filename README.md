@@ -14,6 +14,7 @@ For UNIX based systems:
 ## Prerequisites
 
 - [neovim](https://github.com/neovim/neovim)
+- [fzf](https://github.com/junegunn/fzf)
 - [lazygit](https://github.com/jesseduffield/lazygit)
 
 ## References
