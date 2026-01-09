@@ -28,6 +28,11 @@ return {
         vim.keymap.set("i", "<C-x>", function()
           return vim.fn["codeium#Clear"]()
         end, { expr = true, silent = true })
+        vim.keymap.set("n", "<leader>ux", function()
+          vim.g.codeium_enabled = vim.g.codeium_enabled == 1 and 0 or 1
+          local status = vim.g.codeium_enabled == 1 and "enabled" or "disabled"
+          vim.notify("Codeium " .. status, vim.log.levels.INFO)
+        end, { desc = "Toggle Codeium" })
       end,
     },
   },
