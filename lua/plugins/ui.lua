@@ -58,6 +58,10 @@ return {
     "nvim-neo-tree/neo-tree.nvim",
     opts = {
       window = { position = "right" },
+      log_level = {
+        console = vim.log.levels.ERROR,
+        file = vim.log.levels.INFO,
+      },
     },
   },
 
