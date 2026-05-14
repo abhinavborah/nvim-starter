@@ -53,14 +53,31 @@ return {
     end,
   },
 
-  -- file explorer
+  -- file explorer (snacks_explorer, LazyVim's new default)
   {
-    "nvim-neo-tree/neo-tree.nvim",
+    "folke/snacks.nvim",
     opts = {
-      window = { position = "right" },
-      log_level = {
-        console = vim.log.levels.ERROR,
-        file = vim.log.levels.INFO,
+      explorer = {
+        win = { position = "right" },
+      },
+      picker = {
+        sources = {
+          explorer = {
+            layout = { preset = "sidebar", layout = { position = "right" } },
+          },
+        },
+      },
+    },
+    keys = {
+      {
+        "<leader>e",
+        function() Snacks.explorer({ cwd = require("lazy.core.config").options.root }) end,
+        desc = "Explorer Snacks (root dir)",
+      },
+      {
+        "<leader>E",
+        function() Snacks.explorer() end,
+        desc = "Explorer Snacks (cwd)",
       },
     },
   },

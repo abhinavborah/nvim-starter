@@ -6,6 +6,9 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(vim.env.LAZY or lazypath)
 
+-- Force snacks explorer as default (disables built-in neo-tree extra)
+vim.g.lazyvim_explorer = "snacks"
+
 require("lazy").setup({
   spec = {
     -- add LazyVim and import its plugins
