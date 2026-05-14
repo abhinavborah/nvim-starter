@@ -53,31 +53,16 @@ return {
     end,
   },
 
-  -- file explorer (snacks_explorer, LazyVim's new default)
+  -- file explorer (neo-tree, position override)
   {
-    "folke/snacks.nvim",
+    "nvim-neo-tree/neo-tree.nvim",
     opts = {
-      explorer = {
-        win = { position = "right" },
-      },
-      picker = {
-        sources = {
-          explorer = {
-            layout = { preset = "sidebar", layout = { position = "right" } },
-          },
+      window = { position = "right" },
+      filesystem = {
+        filtered_items = {
+          hide_dotfiles = false,
+          hide_gitignored = true,
         },
-      },
-    },
-    keys = {
-      {
-        "<leader>e",
-        function() Snacks.explorer({ cwd = require("lazy.core.config").options.root }) end,
-        desc = "Explorer Snacks (root dir)",
-      },
-      {
-        "<leader>E",
-        function() Snacks.explorer() end,
-        desc = "Explorer Snacks (cwd)",
       },
     },
   },

@@ -6,8 +6,8 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(vim.env.LAZY or lazypath)
 
--- Force snacks explorer as default (disables built-in neo-tree extra)
-vim.g.lazyvim_explorer = "snacks"
+-- Force neo-tree as default file explorer
+vim.g.lazyvim_explorer = "neo-tree"
 
 require("lazy").setup({
   spec = {
@@ -17,6 +17,7 @@ require("lazy").setup({
     { import = "lazyvim.plugins.extras.linting.eslint" },
     { import = "lazyvim.plugins.extras.formatting.prettier" },
     { import = "lazyvim.plugins.extras.lang.typescript" },
+    { import = "lazyvim.plugins.extras.editor.neo-tree" },
     { import = "lazyvim.plugins.extras.lang.json" },
     { import = "lazyvim.plugins.extras.lang.tailwind" },
     { import = "lazyvim.plugins.extras.util.mini-hipatterns" },
